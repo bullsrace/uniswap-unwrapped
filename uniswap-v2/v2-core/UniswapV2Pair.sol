@@ -42,7 +42,7 @@ contract UniswapV2Pair is IUniswapV2Pair, UniswapV2ERC20 {
 
     bytes4 private constant SELECTOR = bytes4(keccak256(bytes('transfer(address,uint256)'))); // it is a function selector https://docs.soliditylang.org/en/v0.8.15/abi-spec.html?highlight=function%20selector#function-selector
 
-    address public factory; // address of the factory contract which creates pai contract
+    address public factory; // address of the factory contract which creates pair contract
     address public token0; // address of a token of this pair
     address public token1; // address of another token of this pair
 
